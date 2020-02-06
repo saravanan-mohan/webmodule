@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='css/index.css'>
+        <title>Grid Page</title>
+        <script>
+        </script>
+    </head>
+    <body>
+        <script>
+            function expand() {
+                var expandEl = document.getElementById('expandBtn');
+                var navEl = document.getElementById('navContainer');
+                expandEl.classList.toggle('expanded');
+                navEl.classList.toggle('show');
+            }
+        </script>
+        <div class='header-container'>
+            <header>
+                <div id='expandBtn' class='expand-button' onClick='expand()'></div>
+                <h1><a href='#'>Merchant</a></h1>
+            </header>
+            <nav id='navContainer'>
+                <div class='nav-container'>
+                    <div class='nav-item selected'>
+                        <a href='#'>Mobiles</a>
+                    </div>
+                    <div class='nav-item'>
+                        <a href='#'>Desktops</a>
+                    </div>
+                    <div class='nav-item'>
+                        <a href='#'>Laptops</a>
+                    </div>
+                    <div class='nav-item'>
+                        <a href='#'>Accessories</a>
+                    </div>
+                    <div class='nav-item'>
+                        <a href='#'>Support</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <section class='banner-conatainer'>
+            <div class='banner'>
+                Look for you Favorite products.
+                Experience our New Arrivals.
+            </div>
+        </section>
+        <section>
+            <div id='secondary'>
+                <div class='customize-container filter-option'>
+                    <label>Filter &nbsp;</label>
+                    <select>
+                        <option value=''>select</option>
+                        <option value='iPhone'>iPhone</option>
+                        <option value='Mi'>Mi</option>
+                        <option value='Samsung'>Samsung</option>
+                        <option value='Oppo'>Oppo</option>
+                    </select>
+                </div>
+                <div class='customize-container sort-option'>
+                    <label>Sort &nbsp;</label>
+                    <select>
+                        <option value=''>select</option>
+                        <option value='iPhone'>Price</option>
+                        <option value='Mi'>Brand</option>
+                    </select>
+                </div>
+            </div>
+            <div id='grid' class='grid-container'>
+                <div class='grid-item'>
+                    <div class='img-container'>
+                        <img src='images/mobile.jpeg'>
+                    </div>
+                    <div>
+                        <span class='product-desc title'>Oppo S1</span>
+                        <span class='product-desc price'>&#8377; 10000</span>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+                <div class='grid-item'>
+                    <div class='img-container'>
+                        <img src='images/iPhone.jpg'>
+                    </div>
+                    <div>
+                        <span class='product-desc title'>iPhone 11</span>
+                        <span class='product-desc price'>&#8377; 12000</span>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+                <div class='grid-item'>
+                    <div class='img-container'>
+                        <img src='images/mobile.jpeg'>
+                    </div>
+                    <div>
+                        <span class='product-desc title'>Samsung S8</span>
+                        <span class='product-desc price'>&#8377; 15000</span>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+                <div class='grid-item'>
+                    <div class='img-container'>
+                        <img src='images/iphone.jpg'>
+                    </div>
+                    <div>
+                        <span class='product-desc title'>Mi 8 Pro</span>
+                        <span class='product-desc price'>&#8377; 18000</span>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class='footer-container'>
+                Copyright and All rights reserved
+            </div>
+        </footer>
+    </body>
+</html>

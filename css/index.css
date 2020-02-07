@@ -13,6 +13,13 @@ header {
     width: 100%;
 }
 
+.banner {
+    background-image: url('../images/shop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 250px;
+}
+
 .expand-button {
     display: none;
     font-size: 35px;

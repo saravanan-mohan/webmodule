@@ -35,13 +35,6 @@ header h1 {
     margin: 0;
 }
 
-.banner {
-    text-align: center;
-    padding: 10%;
-    font-weight: bold;
-    background-color: darkgray;
-}
-
 .secondary {
     display: flex;
     justify-content: space-between
@@ -135,10 +128,6 @@ select {
 
     header h1 {
         display: inline-block;
-    }
-
-    .banner {
-        padding: 15%;
     }
 
     .expand-button {

@@ -5,8 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel='stylesheet' href='css/index.css'>
         <title>Grid Page</title>
-        <script>
-        </script>
     </head>
     <body>
         <header>
@@ -32,92 +30,110 @@
                 </div>
             </div>
         </nav>
-        <section class='banner-conatainer'>
-            <div class='banner'></div>
-        </section>
-        <section>
-            <div class='secondary'>
-                <div class='customize-container filter-option'>
-                    <label>Filter &nbsp;</label>
-                    <select>
-                        <option value=''>select</option>
-                        <option value='iPhone'>iPhone</option>
-                        <option value='Mi'>Mi</option>
-                        <option value='Samsung'>Samsung</option>
-                        <option value='Oppo'>Oppo</option>
-                    </select>
-                </div>
-                <div class='customize-container sort-option'>
-                    <label>Sort &nbsp;</label>
-                    <select>
-                        <option value=''>select</option>
-                        <option value='iPhone'>Price</option>
-                        <option value='Mi'>Brand</option>
-                    </select>
-                </div>
-            </div>
-            <div id='grid' class='grid-container'>
-                <div class='grid-item'>
-                    <div class='img-container'>
-                        <img src='images/mobile.jpeg'>
+        <section class='page-container'>
+            <section class='side-nav'>
+                <div class='side-nav-title'>Brand</div>
+                <ul class='brand-select'>
+                    <li>
+                        <input type='checkbox' name='oppo' value='oppo'>
+                        <label for='oppo'>Oppo</label>
+                    </li>
+                    <li>
+                        <input type='checkbox' name='apple' value='apple'>
+                        <label for='oppo'>Apple</label>
+                    </li>
+                    <li>
+                        <input type='checkbox' name='samsung' value='samsung'>
+                        <label for='samsung'>Samsung</label>
+                    </li>
+                    <li>
+                        <input type='checkbox' name='mi' value='mi'>
+                        <label for='mi'>Mi</label>
+                    </li>
+                </ul>
+            </section>
+            <section class='main'>
+                <section class='banner-container'>
+                    <div class='banner'></div>
+                </section>
+                <section>
+                    <div class='secondary'>
+                        <div class='customize-container filter-option'>
+                            <label>Filter &nbsp;</label>
+                            <select>
+                                <option value=''>select</option>
+                                <option value='iPhone'>iPhone</option>
+                                <option value='Mi'>Mi</option>
+                                <option value='Samsung'>Samsung</option>
+                                <option value='Oppo'>Oppo</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class='desc-container'>
-                        <span class='product-desc title'>Oppo S1</span>
-                        <span class='product-desc price'>&#8377; 10000</span>
-                        <button>Buy Now</button>
+                    <div id='grid' class='grid-container'>
+                        <div class='grid-item'>
+                            <div class='img-container'>
+                                <img src='images/mobile.jpeg'>
+                            </div>
+                            <div class='desc-container'>
+                                <span class='product-desc title'>Oppo S1</span>
+                                <span class='product-desc price'>&#8377; 10000</span>
+                                <button>Buy Now</button>
+                            </div>
+                        </div>
+                        <div class='grid-item'>
+                            <div class='img-container'>
+                                <img src='images/iPhone.jpg'>
+                            </div>
+                            <div class='desc-container'>
+                                <span class='product-desc title'>iPhone 11</span>
+                                <span class='product-desc price'>&#8377; 12000</span>
+                                <button>Buy Now</button>
+                            </div>
+                        </div>
+                        <div class='grid-item'>
+                            <div class='img-container'>
+                                <img src='images/mobile.jpeg'>
+                            </div>
+                            <div class='desc-container'>
+                                <span class='product-desc title'>Samsung S8</span>
+                                <span class='product-desc price'>&#8377; 15000</span>
+                                <button>Buy Now</button>
+                            </div>
+                        </div>
+                        <div class='grid-item'>
+                            <div class='img-container'>
+                                <img src='images/iphone.jpg'>
+                            </div>
+                            <div class='desc-container'>
+                                <span class='product-desc title'>Mi 8 Pro</span>
+                                <span class='product-desc price'>&#8377; 18000</span>
+                                <button>Buy Now</button>
+                            </div>
+                        </div>
+                        <div class='grid-item'>
+                            <div class='img-container'>
+                                <img src='images/mobile.jpeg'>
+                            </div>
+                            <div class='desc-container'>
+                                <span class='product-desc title'>Oppo S2</span>
+                                <span class='product-desc price'>&#8377; 10000</span>
+                                <button>Buy Now</button>
+                            </div>
+                        </div>
+                        <div class='grid-item'>
+                            <div class='img-container'>
+                                <img src='images/iphone.jpg'>
+                            </div>
+                            <div class='desc-container'>
+                                <span class='product-desc title'>Mi 8 Pro</span>
+                                <span class='product-desc price'>&#8377; 18000</span>
+                                <button>Buy Now</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class='grid-item'>
-                    <div class='img-container'>
-                        <img src='images/iPhone.jpg'>
-                    </div>
-                    <div class='desc-container'>
-                        <span class='product-desc title'>iPhone 11</span>
-                        <span class='product-desc price'>&#8377; 12000</span>
-                        <button>Buy Now</button>
-                    </div>
-                </div>
-                <div class='grid-item'>
-                    <div class='img-container'>
-                        <img src='images/mobile.jpeg'>
-                    </div>
-                    <div class='desc-container'>
-                        <span class='product-desc title'>Samsung S8</span>
-                        <span class='product-desc price'>&#8377; 15000</span>
-                        <button>Buy Now</button>
-                    </div>
-                </div>
-                <div class='grid-item'>
-                    <div class='img-container'>
-                        <img src='images/iphone.jpg'>
-                    </div>
-                    <div class='desc-container'>
-                        <span class='product-desc title'>Mi 8 Pro</span>
-                        <span class='product-desc price'>&#8377; 18000</span>
-                        <button>Buy Now</button>
-                    </div>
-                </div>
-                <div class='grid-item'>
-                    <div class='img-container'>
-                        <img src='images/mobile.jpeg'>
-                    </div>
-                    <div class='desc-container'>
-                        <span class='product-desc title'>Oppo S2</span>
-                        <span class='product-desc price'>&#8377; 10000</span>
-                        <button>Buy Now</button>
-                    </div>
-                </div>
-                <div class='grid-item'>
-                    <div class='img-container'>
-                        <img src='images/iphone.jpg'>
-                    </div>
-                    <div class='desc-container'>
-                        <span class='product-desc title'>Mi 8 Pro</span>
-                        <span class='product-desc price'>&#8377; 18000</span>
-                        <button>Buy Now</button>
-                    </div>
-                </div>
-            </div>
+                </section>
+            </section>
+            
         </section>
         <footer>
             <div class='footer-container'>
@@ -125,9 +141,17 @@
             </div>
         </footer>
         <script>
+            var navEl = document.getElementById('navContainer');
+            window.addEventListener('scroll', function(){
+                if (navEl.offsetTop >= window.pageYOffset) {
+                    navEl.classList.remove('top-fix');
+                } else if (navEl.offsetTop < window.pageYOffset) {
+                    navEl.classList.add('top-fix');
+                }
+            })
+
             function expand() {
                 var expandEl = document.getElementById('expandBtn');
-                var navEl = document.getElementById('navContainer');
                 expandEl.classList.toggle('expanded');
                 navEl.classList.toggle('show');
             }

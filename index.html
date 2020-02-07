@@ -9,14 +9,6 @@
         </script>
     </head>
     <body>
-        <script>
-            function expand() {
-                var expandEl = document.getElementById('expandBtn');
-                var navEl = document.getElementById('navContainer');
-                expandEl.classList.toggle('expanded');
-                navEl.classList.toggle('show');
-            }
-        </script>
         <div class='header-container'>
             <header>
                 <div id='expandBtn' class='expand-button' onClick='expand()'></div>
@@ -49,7 +41,7 @@
             </div>
         </section>
         <section>
-            <div id='secondary'>
+            <div class='secondary'>
                 <div class='customize-container filter-option'>
                     <label>Filter &nbsp;</label>
                     <select>
@@ -74,7 +66,7 @@
                     <div class='img-container'>
                         <img src='images/mobile.jpeg'>
                     </div>
-                    <div>
+                    <div class='desc-container'>
                         <span class='product-desc title'>Oppo S1</span>
                         <span class='product-desc price'>&#8377; 10000</span>
                         <button>Buy Now</button>
@@ -84,7 +76,7 @@
                     <div class='img-container'>
                         <img src='images/iPhone.jpg'>
                     </div>
-                    <div>
+                    <div class='desc-container'>
                         <span class='product-desc title'>iPhone 11</span>
                         <span class='product-desc price'>&#8377; 12000</span>
                         <button>Buy Now</button>
@@ -94,7 +86,7 @@
                     <div class='img-container'>
                         <img src='images/mobile.jpeg'>
                     </div>
-                    <div>
+                    <div class='desc-container'>
                         <span class='product-desc title'>Samsung S8</span>
                         <span class='product-desc price'>&#8377; 15000</span>
                         <button>Buy Now</button>
@@ -104,7 +96,27 @@
                     <div class='img-container'>
                         <img src='images/iphone.jpg'>
                     </div>
-                    <div>
+                    <div class='desc-container'>
+                        <span class='product-desc title'>Mi 8 Pro</span>
+                        <span class='product-desc price'>&#8377; 18000</span>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+                <div class='grid-item'>
+                    <div class='img-container'>
+                        <img src='images/mobile.jpeg'>
+                    </div>
+                    <div class='desc-container'>
+                        <span class='product-desc title'>Oppo S2</span>
+                        <span class='product-desc price'>&#8377; 10000</span>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+                <div class='grid-item'>
+                    <div class='img-container'>
+                        <img src='images/iphone.jpg'>
+                    </div>
+                    <div class='desc-container'>
                         <span class='product-desc title'>Mi 8 Pro</span>
                         <span class='product-desc price'>&#8377; 18000</span>
                         <button>Buy Now</button>
@@ -117,5 +129,13 @@
                 Copyright and All rights reserved
             </div>
         </footer>
+        <script>
+            function expand() {
+                var expandEl = document.getElementById('expandBtn');
+                var navEl = document.getElementById('navContainer');
+                expandEl.classList.toggle('expanded');
+                navEl.classList.toggle('show');
+            }
+        </script>
     </body>
 </html>

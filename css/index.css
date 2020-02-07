@@ -25,6 +25,38 @@ img {
 
 /* Header section */
 
+.header-wrapper {
+    display: block;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.heading-right {
+    display: flex;
+    align-items: center;
+}
+
+.cart, .sign-up {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cart {
+    background-image: url('../images/cart.png');
+}
+
+.sign-up {
+    background-image: url('../images/user.png');
+}
+
 header {
     background-color: #808588;
 }
@@ -197,12 +229,24 @@ select {
 /* Responsive setup */
 
 @media only screen and (max-width: 768px) {
+    .header-wrapper {
+        display: inline-block;
+        width: 80%;
+    }
+
     header h1 {
         display: inline-block;
     }
 
+    .cart, .sign-up {
+        margin-right: 10px;
+    }
+
     .expand-button {
         display: inline-block;
+        width: 15%;
+        padding: 15px;
+        box-sizing: border-box;
     }
 
     nav {

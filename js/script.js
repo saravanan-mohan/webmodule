@@ -16,10 +16,12 @@ function expand() {
 
 function openOverlay() {
     overlayEl.classList.add('show-overlay');
+    document.body.classList.add('no-scroll');
 }
 
 window.onclick = function(ev) {
-    if(ev.target === this.overlayEl) {
-        overlayEl.classList.remove('show-overlay')
+    if(ev.target === overlayEl) {
+        overlayEl.classList.remove('show-overlay');
+        document.body.classList.remove('no-scroll');
     }
 }

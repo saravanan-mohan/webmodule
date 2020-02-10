@@ -40,27 +40,71 @@
         </nav>
         <section class='page-container'>
             <section class='side-nav'>
-                <div class='side-nav-title'>Brand</div>
-                <form>
-                    <ul class='brand-select'>
-                        <li>
-                            <input type='checkbox' id='oppo' name='oppo' value='oppo'>
-                            <label for='oppo'>Oppo</label>
-                        </li>
-                        <li>
-                            <input type='checkbox' id='apple' name='apple' value='apple'>
-                            <label for='apple'>Apple</label>
-                        </li>
-                        <li>
-                            <input type='checkbox' id='samsung' name='samsung' value='samsung'>
-                            <label for='samsung'>Samsung</label>
-                        </li>
-                        <li>
-                            <input type='checkbox' id='mi' name='mi' value='mi'>
-                            <label for='mi'>Mi</label>
-                        </li>
+                <div class='side-nav-item'>
+                    <div class='side-nav-title'>Brand</div>
+                    <form>
+                        <ul class='brand-select'>
+                            <li>
+                                <input type='checkbox' id='oppo' name='oppo' value='oppo'>
+                                <label for='oppo'>Oppo</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' id='apple' name='apple' value='apple'>
+                                <label for='apple'>Apple</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' id='samsung' name='samsung' value='samsung'>
+                                <label for='samsung'>Samsung</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' id='mi' name='mi' value='mi'>
+                                <label for='mi'>Mi</label>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class='side-nav-item'>
+                    <div class='side-nav-title'>Rating</div>
+                    <ul class='rating-select'>
+                        <li class='star filled'></li>
+                        <li class='star filled'></li> 
+                        <li class='star filled'></li> 
+                        <li class='star filled'></li> 
+                        <li class='star filled'></li>
                     </ul>
-                </form>
+                    <ul class='rating-select'>
+                        <li class='star filled'></li>
+                        <li class='star filled'></li> 
+                        <li class='star filled'></li> 
+                        <li class='star filled'></li> 
+                        <li class='star empty'></li>
+                        <li class='star up'>& up</li>
+                    </ul>
+                    <ul class='rating-select'>
+                        <li class='star filled'></li>
+                        <li class='star filled'></li> 
+                        <li class='star filled'></li> 
+                        <li class='star empty'></li> 
+                        <li class='star empty'></li>
+                        <li class='star up'>& up</li>
+                    </ul>
+                    <ul class='rating-select'>
+                        <li class='star filled'></li>
+                        <li class='star filled'></li> 
+                        <li class='star empty'></li> 
+                        <li class='star empty'></li> 
+                        <li class='star empty'></li>
+                        <li class='star up'>& up</li>
+                    </ul>
+                    <ul class='rating-select'>
+                        <li class='star filled'></li>
+                        <li class='star empty'></li> 
+                        <li class='star empty'></li> 
+                        <li class='star empty'></li> 
+                        <li class='star empty'></li>
+                        <li class='star up'>& up</li>
+                    </ul>
+                </div>
             </section>
             <section class='main'>
                 <section class='banner-container'>
@@ -80,7 +124,7 @@
                         </div>
                     </div>
                     <div id='grid' class='grid-container'>
-                        <div class='grid-item'>
+                        <div class='grid-item' onClick='openOverlay()'>
                             <div class='img-container'>
                                 <img src='images/mobile.jpeg'>
                             </div>
@@ -90,7 +134,7 @@
                                 <button>Buy Now</button>
                             </div>
                         </div>
-                        <div class='grid-item'>
+                        <div class='grid-item' onClick='openOverlay()'>
                             <div class='img-container'>
                                 <img src='images/iPhone.jpg'>
                             </div>
@@ -100,7 +144,7 @@
                                 <button>Buy Now</button>
                             </div>
                         </div>
-                        <div class='grid-item'>
+                        <div class='grid-item' onClick='openOverlay()'>
                             <div class='img-container'>
                                 <img src='images/mobile.jpeg'>
                             </div>
@@ -110,7 +154,7 @@
                                 <button>Buy Now</button>
                             </div>
                         </div>
-                        <div class='grid-item'>
+                        <div class='grid-item' onClick='openOverlay()'>
                             <div class='img-container'>
                                 <img src='images/iphone.jpg'>
                             </div>
@@ -120,7 +164,7 @@
                                 <button>Buy Now</button>
                             </div>
                         </div>
-                        <div class='grid-item'>
+                        <div class='grid-item' onClick='openOverlay()'>
                             <div class='img-container'>
                                 <img src='images/mobile.jpeg'>
                             </div>
@@ -130,7 +174,7 @@
                                 <button>Buy Now</button>
                             </div>
                         </div>
-                        <div class='grid-item'>
+                        <div class='grid-item' onClick='openOverlay()'>
                             <div class='img-container'>
                                 <img src='images/iphone.jpg'>
                             </div>
@@ -143,28 +187,34 @@
                     </div>
                 </section>
             </section>
-            
+            <section id='overlay'>
+                <div class='overlay-wrapper'>
+                    <div class='overlay-img'>
+                        <img src='images/iphone.jpg'>
+                    </div>
+                    <div class='overlay-desc-wrapper'>
+                        <div class='overlay-desc title'>Mi 8 Pro</div>
+                        <div class='overlay-desc price'>Price: &#8377; 18000</div>
+                        <article class='overlay-desc specs'>
+                            <p>
+                                <ul>
+                                    <li>13MP+2MP dual rear camera with AI beauty, HDR, background blur, sticker, filter | 16MP front facing camera</li>
+                                    <li>15.8 centimeters (6.2-inch) HD + in-cell capacitive touchscreen with 1520 x 720 pixels resolution, 270 ppi pixel density and 16M color support</li>
+                                    <li>Memory, Storage & SIM: 3GB RAM | 64GB storage expandable up to 256GB | Dual nano SIM with dual standby (4G+4G)</li>
+                                </ul>
+                            </p>
+                        </article>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </section>
         </section>
         <footer>
             <div class='footer-container'>
                 Copyright and All rights reserved
             </div>
         </footer>
-        <script>
-            var navEl = document.getElementById('navContainer');
-            window.addEventListener('scroll', function(){
-                if (navEl.offsetTop >= window.pageYOffset) {
-                    navEl.classList.remove('top-fix');
-                } else if (navEl.offsetTop < window.pageYOffset) {
-                    navEl.classList.add('top-fix');
-                }
-            })
-
-            function expand() {
-                var expandEl = document.getElementById('expandBtn');
-                expandEl.classList.toggle('expanded');
-                navEl.classList.toggle('show');
-            }
-        </script>
+        
+        <script src="./js/script.js"></script>
     </body>
 </html>

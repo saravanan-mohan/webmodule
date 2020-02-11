@@ -143,6 +143,10 @@ body {
 
             &.show {
                 display: block;
+
+                &.top-fix {
+                    position: relative;
+                }
             }
 
             .nav-container {
@@ -333,6 +337,7 @@ body {
             .overlay-wrapper {
                 position: relative;
                 display: flex;
+                flex-direction: column;
                 background-color: #ffffff;
                 width: 80%;
                 border: 2px solid #d2d2d2;
@@ -343,34 +348,59 @@ body {
                     to {top:0; opacity:1}
                 }
 
-                .overlay-img, .overlay-desc-wrapper {
-                    width: 50%;
-                    padding: 20px;
-                }
+                .close-btn {
+                    transform: rotate(45deg);
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    right: 0;
+                    cursor: pointer;
 
-                .overlay-desc-wrapper {
-                    .overlay-desc {
-                        margin-bottom: 10px;
-
-                        &.title {
-                            font-weight: bold;
-                            font-size: 25px;
-                        }
+                    &:before {
+                        content: '+';
+                        font-size: 40px;
                     }
 
-                    button {
-                        @extend %button;
+                    &:hover {
+                        color: grey;
+                    }
+                }
+
+                .overlay-content{
+                    display: flex;
+                    margin-top: 30px;
+
+                    .overlay-img, .overlay-desc-wrapper {
+                        width: 50%;
+                        padding: 20px;
+                    }
+    
+                    .overlay-desc-wrapper {
+                        .overlay-desc {
+                            margin-bottom: 10px;
+    
+                            &.title {
+                                font-weight: bold;
+                                font-size: 25px;
+                            }
+                        }
+    
+                        button {
+                            @extend %button;
+                        }
                     }
                 }
             }
 
             @media only screen and (max-width: 768px) {
                 .overlay-wrapper{
-                    flex-direction: column;
+                    .overlay-content{
+                        flex-direction: column;
 
-                    .overlay-img, .overlay-desc-wrapper {
-                        width: 100%;
-                        box-sizing: border-box;
+                        .overlay-img, .overlay-desc-wrapper {
+                            width: 100%;
+                            box-sizing: border-box;
+                        }
                     }
                 }
             }

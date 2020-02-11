@@ -333,6 +333,10 @@ select {
         display: block;
     }
 
+    #navContainer.show.top-fix {
+        position: relative;
+    }
+
     .nav-item {
         border-bottom: 1px solid darkgrey;
     }

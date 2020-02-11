@@ -19,6 +19,11 @@ function openOverlay() {
     document.body.classList.add('no-scroll');
 }
 
+function closeOverlay() {
+    overlayEl.classList.remove('show-overlay');
+    document.body.classList.remove('no-scroll');
+}
+
 window.onclick = function(ev) {
     if(ev.target === overlayEl) {
         overlayEl.classList.remove('show-overlay');
